@@ -18,8 +18,9 @@ public class InterceptorConfig implements WebMvcConfigurer{
 		
 		System.out.println("인터셉터 동작 확인");
 		registry.addInterceptor(jwtInterceptor)
-		.addPathPatterns("/**");
-		//.excludePathPatterns("/auth");
+		.addPathPatterns("/**")
+		.excludePathPatterns("/ws-chat", "/ws-notice", "/auth");
+
 	}
 	
 }
