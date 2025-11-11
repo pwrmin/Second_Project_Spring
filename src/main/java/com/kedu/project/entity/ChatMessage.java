@@ -37,7 +37,7 @@ public class ChatMessage {
     @Column(name = "SEND_TIME", nullable = false)
     private LocalDateTime sendTime;
 
-    // ✅ DB에 저장 안하고 계산해서 내려주는 값
+    //  DB에 저장 안하고 계산해서 내려주는 값
     @Transient
     private int readCount;
 
